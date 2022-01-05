@@ -1,0 +1,31 @@
+input	target
+The Babel konqueror plugin gives you quick access to the Babelfish translation service.	konqueror Kuri i Umwandiko wahinduwe ururimi Serivisi.
+The Babel konqueror plugin	konqueror Gucomeka
+Using the Babelfish plugin	i Gucomeka
+Babelfish is a machine translation service provided by AltaVista.	Umwandiko wahinduwe ururimi Serivisi ku
+The plugin allows you to automatically translate web pages between several languages.	translate Urubuga Amapaji hagati Indimi.
+If you have a portion of the text on the page selected,that will be translated instead of the entire URL .	Byahiswemo,Bya i URL .
+Not all languages are available from the Babelfish service.	i Serivisi.
+Machine translation is not a perfect science Babelfish will at best give you a rough translation,and at worst will give you a very funny read. Do n't base important decisions on things you have read from a Babelfish translated page,without confirming that the translation is indeed accurate.	Umwandiko wahinduwe ururimi ni OYA A Ku Bihebuje A Bipfuye Kuboneka Umwandiko wahinduwe ururimi,na Ku A Soma. SHINGIRO By'A Ipaji,i Umwandiko wahinduwe ururimi ni.
+You may only translate web pages that are accessible on the world wide web. To translate any other text,you should go directly to the Babelfish site itself,where you are able to paste in text for translation.	Gicurasi translate Urubuga Amapaji ku i Urubuga. translate Icyo ari cyo cyose Ikindi Umwandiko,Gyayo Kuri i Ipaji,Umwandiko wahinduwe ururimi.
+The Babelfish plugin is copyright C 2001 Kurt. Granroth Kurt. Granroth. mail	ni Uburenganzira bw' umuhimbyi kde. org
+Documentation Copyright 2002 Lauri. Watts Lauri. Watts. mail	kde. org
+The konqueror Plugins Handbook	Agatabo k' Amacomeka
+This is the handbook for the additional plugins for konqueror the kde file manager and web browser.	konqueror i kde Idosiye Muyobozi na Urubuga Mucukumbuzi.
+The package package contains several plugins for konqueror . Despite their small size,they provide additional functions and ease the use of some of the functions konqueror already contains,by making them more accessible.	package konqueror . Gitoya Ingano,Imimaro na i Koresha Bya Bya i Imimaro konqueror ifite,ku Birenzeho.
+More information on the use of konqueror and its built in functionality,can be found in the konqueror handbook.	ku i Koresha Bya konqueror na in,Byabonetse in i kicker .
+This is a list of the standard configuration modules provided by the kde addons package. Please note that there may be many more modules on your system if you have installed additional software.	ni A Urutonde Bya i Bisanzwe Iboneza Modire ku i kde Porogaramu. Impugukirwa Gicurasi Birenzeho Modire ku Sisitemu NIBA yakorewe iyinjizaporogaramu.
+The konqueror image gallery	konqueror Ishusho Ikirongozi
+The Embedded Media Player	Media Player
+The Folder Filter	Mushunguzi y' Ifishi
+The User Agent Changer	Umukozi - koresha
+The Web Archiver	CommentWeb Idosiye yo mu bushinguro
+FSView - the File System View	i Idosiye
+Copyrights for each plugin are listed in the applicable chapter.	in i Umutwe.
+underFDL underGPL	underFDL underGPL
+You should install the kdebase package which contains konqueror before attempting to compile this package.	Kwinjiza porogaramu i Porogaramu ifite konqueror Mbere Kuri Gukusanya iyi Porogaramu.
+The crashes plugin bookmarks a list of websites that konqueror has crashed on.	Ibimenyetso A Urutonde Bya konqueror ku.
+To use the crashes plugin point konqueror to Tools Crashes. Here you can select to view the site that konqueror has crashed on or clear the list of crashes,if any.	Akadomo konqueror Kuri. Guhitamo Kuri Reba i Ipaji konqueror ku Cyangwa Gusiba i Urutonde Bya,NIBA Icyo ari cyo cyose.
+The directory view filter allows you to choose which items are displayed in a directory.	Kuri Hitamo... Ibigize in A Ububiko.
+The View Filter	Akayunguruzo gashya
+The View Filter plugin also known as dirfilter can be accessed in the konqueror menubar under Tools View Filter. This plugin allows you to filter konqueror 's current working directory in a variety of ways.	Nkain i konqueror . konqueror 'S KIGEZWEHO Ububiko in A Bya.

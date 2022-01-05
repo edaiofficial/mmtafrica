@@ -1,0 +1,51 @@
+input	target
+The DOM Tree Viewer allows a developer to view the styles,attributes and elements of a web document.	A Mukoraporogaramu Kuri Reba i Imisusire,Ibiranga na Ibintu Bya A Urubuga Inyandiko.
+If you wish to manipulate the DOM tree in any way you will have to use an external script to do so.	Kuri i Igiti in Icyo ari cyo cyose Kuri Koresha external IYANDIKA Kuri
+The fsview Plugin for konqueror is another view mode for objects of mimetype inode directory for local files. It can be viewed as an alternative to the various iconviews and listviews for browsing the content of your local file system.	fsview konqueror Ibintu Bya UbwokoMime Bya hafi Idosiye.Bya Bya hafi Idosiye Sisitemu.
+fsview - the File System View	fsview - i Idosiye
+Visualization Features	Uturanga Ugukora
+This section explains the graphical visualization of fsview in detail.	Icyiciro i Bya fsview in Ibisobanuro.
+Item Drawing Options	Amahitamo y' Ishusho
+In fsview ,an item of the tree map visualization is a rectangle representing a file or folder of your file system. For easier navigation,rectangles have a meaningful coloring and labeling options.	fsview ,Ikintu Bya i Igiti ni A Urukiramende A Idosiye Cyangwa Ububiko... Bya Idosiye Sisitemu. Ibuganya,Urukiramende A na Amahitamo.
+The color of a rectangle,switchable via menu item View Color Mode can be either Depth for easy detection of the nesting,or a color mapping of different file attributes like name,owner,group,or mime type.	Bya A Urukiramende,Bya i,Igereranya Bya Idosiye Ibiranga nka Izina,Nyirabyo,Itsinda,Cyangwa Ubwoko.
+TreeMap Drawing Algorithms	Alugoritimu Ifangamabara
+You can choose the minimal area of items to be drawn via the menu item View Stop at Area. Instead,a hash pattern will be drawn over the parents area to signal that this space is in fact occupied by a child.	Hitamo... i Umwanya Bya Ibigize Kuri Biturutse i Ibikubiyemo Ikintu Ku.,A Ishusho KURI i Umwanya Kuri iyi Umwanya ni in FACT ku A.
+User Interface	Ahagenewe Ukoresha
+Originally,fsview was meant as a small test application and usage tutorial for the TreeMap widget developed within KCachegrind.	fsview i muri
+underGPL underFDL	underGPL underFDL
+madpenguin8 yahoo. com	Yahoo. com
+The Image Gallery konqueror plugin creates image gallery html pages from a selected directory.	konqueror A Byahiswemo Ububiko.
+The Image Gallery plugin can be accessed in the konqueror menubar under Tools Create Image Gallery,or with Ctrl I.	in i konqueror Ibikubiyemo Umurongo,Ctrl I.
+When you start the Image Gallery plugin a dialog opens allowing you to adjust the way the gallery is created.	Tangira vendorShortName A Ikiganiro Kuri i i Ikirongozi ni Byaremwe.
+Look Dialog Screenshot	Ishushomugaragaza ry' Idirishya
+The Look dialog is for adjusting the appearance of the gallery page.	i Imigaragarire Bya i Ikirongozi Ipaji.
+Page title	Umutwe w' Ipaji
+The Page title option has a text input box for changing the title of the image gallery page.	Bya i Ishusho Ikirongozi Ipaji.
+The Images per row option has a slider and a spin box for adjusting the number of thumbnails that are in a single row in the gallery.	i Umubare Bya Igaragazaryihuse in A UMWE Urubariro in i Ikirongozi.
+Show image file name	Ishusho Idosiye Izina
+The Show image file name check box allows you to turn on or off the use of the filenames below the gallery thumbnails.	Kugenzura Agasanduku Kuri ku Cyangwa Bidakora i Koresha Bya i munsi i Ikirongozi Igaragazaryihuse.
+Show image file size	Ishusho Idosiye Ingano
+The Show image filesize check box allows you to turn on or off the use of the filesizes below the gallery thumbnails.	Kugenzura Agasanduku Kuri ku Cyangwa Bidakora i Koresha Bya i Idosiye Ingano munsi i Ikirongozi Igaragazaryihuse.
+Show image dimensions	Ishusho Idosiye Ingano
+The Show image dimensions check box allows you to turn on or off the use of the image dimensions in pixels below the gallery thumbnails.	Kugenzura Agasanduku Kuri ku Cyangwa Bidakora i Koresha Bya i Idosiye Ingano munsi i Ikirongozi Igaragazaryihuse.
+Font name	Izina ry' Umukono
+The Font name combo box provides you with a choice of which font to use in creating the gallery.	A Bya Imyandikire Kuri Koresha in Kurema i Ikirongozi.
+Font size	Ingano y' imyandikire
+The Font size spin box is for changing the size of the font you selected.	Bya i Imyandikire Byahiswemo.
+Foreground color	Ibara rya mbugambanza
+The Foreground color option has a selector for choosing the foreground color of the gallery,this includes the text areas.	Bya i Ikirongozi,iyi i Umwandiko Ubuso
+Background color	Ibara rya mbuganyuma
+The Background color option has a selector for choosing the background color of the gallery.	Bya i Ikirongozi.
+Folders Dialog Screenshot	Ishushomugaragaza ry' Ibiro
+The Folders dialog is used for choosing where to save the gallery. This dialog is also used to configure what folders are used.	Kuri Kubika i Ikirongozi. Ikiganiro ni Byakoreshejwe Kuri Kugena Imiterere Ububiko Byakoreshejwe.
+The Save to file selector decides where you want to save you image gallery html page.	Kubika Kuri Idosiye itoranya Kuri Kubika Ishusho Ikirongozi HTML Ipaji.
+The Recurse subfolders check box enables recursing of subdirectories. If the check box is enabled,a slider and spin box are enabled to select the recursion depth.	Ububiko Kugenzura Agasanduku Bya Ububiko bwungirije. i Kugenzura Agasanduku ni Bikora,A na Gukaraga Agasanduku Bikora Kuri Guhitamo i Ubujyakuzimu.
+Copy original files	Umwimerere Idosiye
+The Copy original files check box creates an image folder storing copies of the original images used in the gallery.	Umwimerere Idosiye Kugenzura Agasanduku Ishusho Ububiko... Amakopi Bya i Umwimerere Ishusho Byakoreshejwe in i Ikirongozi.
+Use comment file	Icyo wongeraho Idosiye
+The use comment file check box enables a file selector to choose a comments file to use with your gallery.	Koresha Icyo wongeraho Idosiye Kugenzura Agasanduku A Idosiye itoranya Kuri Hitamo...Ikirongozi.
+Thumbnails Dialog Screenshot	Amagaragazambere y' Igaragazaryihuse
+The thumbnails dialog is used for adjusting the properties of the thumbnails in the gallery.	i Indangabintu Bya i Igaragazaryihuse in i Ikirongozi.
+Image format for the thumbnails	i Igaragazaryihuse
+The image format combo box allows you to choose what format is used for the thumbnail images.	Ishusho Imiterere Agasanduku Kuri Hitamo...i Ishusho.
+Thumbnail size	Ingano y' ivugurura ryihuse
