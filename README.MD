@@ -6,16 +6,6 @@ This repository contains the official implementation of the MMTAfrica paper ([Em
 
 We focus on the task of multilingual machine translation for African languages in the 2021 WMT Shared Task: Large-Scale Multilingual Machine Translation. We introduce MMTAfrica, the first many-to-many multilingual translation system for six African languages: Fon (fon), Igbo (ibo), Kinyarwanda (kin), Swahili/Kiswahili (swa), Xhosa (xho), and Yoruba (yor) and two non-African languages: English (eng) and French (fra). For multilingual translation concerning African languages, we introduce a novel backtranslation and reconstruction objective, BT\&REC, inspired by the random online back translation and T5 modeling framework respectively, to effectively leverage monolingual data. Additionally, we report improvements from MMTAfrica over the FLORES 101 benchmarks (spBLEU gains ranging from +0.58 in Swahili to French to +19.46 in French to Xhosa).
 
-__Focus Languages__
-- ig
-- fon
-- en
-- fr
-- rw
-- yo
-- xh
-- sw
-
 ## Installation
 To avoid any conflict with your existing Python setup, we suggest to work in a virtual environment:
 ```
@@ -31,7 +21,12 @@ pip install -r requirements.txt
 ```
 
 ## Example
-### Reproduce our paper
+```bash
+python mmtafrica.py 
+```
+Consult the arguments [here](https://github.com/edaiofficial/mmtafrica/blob/main/mmtafrica.py#L772-L860).
+
+### Reproducing our paper
 Our data for the paper experiments is stored in the `/experiments` folder. To train MMTAfrica from scratch and reproduce our experiemnts, using the data we have in `/experiments`, run
 ```bash
 cd experiments
@@ -40,7 +35,7 @@ python ../mmtafrica.py --model_name='mmtafrica' --homepath="<YOUR HOMEPATH>"
 By default, homepath is the current working directory when you run the code. 
 
 # Model checkpoint
-Our model checkpoints are saved [here](https://drive.google.com/file/d/1gUINHLRQC06HGGeP211-x3IIr3WS84Iy/view?usp=sharing).
+Our model checkpoints is saved [here](https://drive.google.com/file/d/1gUINHLRQC06HGGeP211-x3IIr3WS84Iy/view?usp=sharing).
 
 
 ## Citation
