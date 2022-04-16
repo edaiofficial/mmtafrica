@@ -1,5 +1,5 @@
 # MMTAfrica
-[Paper]() - [Installation](#installation) - [Example](#example) - [Citation](#citation)
+[Paper](https://aclanthology.org/2021.wmt-1.48/) - [Installation](#installation) - [Example](#example) - [Model checkpoint](#model-checkpoint)  - [Citation](#citation)
 
 
 This repository contains the official implementation of the MMTAfrica paper ([Emezue & Dossou, WMT 2021](https://aclanthology.org/2021.wmt-1.48/)).
