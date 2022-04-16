@@ -1,5 +1,5 @@
 # MMTAfrica
-[Paper]() - [Installation](installation) - [Example](example) - [Citation](citation)
+[Paper]() - [Installation](#installation) - [Example](#example) - [Citation](#citation)
 
 
 This repository contains the official implementation of the MMTAfrica paper ([Emezue & Dossou, WMT 2021](https://aclanthology.org/2021.wmt-1.48/)).
@@ -31,12 +31,17 @@ pip install -r requirements.txt
 ```
 
 ## Example
-To train MMTAfrica from scratch and reproduce our experiemnts, using the data we have in `/experiments`, run
+```bash
+python mmtafrica.py
+```
+By default, homepath is the current working directory when you run the code. 
+
+### Reproduce our paper
+Our data for the paper is stored in the `/experiments` folder. To train MMTAfrica from scratch and reproduce our experiemnts, using the data we have in `/experiments`, run
 ```bash
 cd experiments
 python ../mmtafrica.py --model_name='mmtafrica' --homepath="<YOUR HOMEPATH>"
 ```
-By default, homepath is the current working directory when you run the code. 
 
 ## Citation
 ```
