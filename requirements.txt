@@ -42,3 +42,4 @@ requests
 six
 python-dateutil
 ipywidgets
+huggingface_hub
