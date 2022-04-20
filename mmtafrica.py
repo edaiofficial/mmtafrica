@@ -108,6 +108,7 @@ class Config():
             
         
 
+
 def beautify_time(time):
     hr = time//(3600)
     mins = (time-(hr*3600))//60
@@ -761,6 +762,98 @@ def main(args):
         print("ALL DONE",file=fl)
 
 
+def load_params(args: dict) -> dict:
+    """
+    Load the parameters passed to `translate`
+    """
+    #if not os.path.exists(args['checkpoint']):
+    #    raise Exception(f'Checkpoint file does not exist')
+
+    params = {}
+    model_repo = 'google/mt5-base'
+    LANG_TOKEN_MAPPING = {
+            'ig': '<ig>',
+            'fon': '<fon>',
+            'en': '<en>',
+            'fr': '<fr>',
+            'rw':'<rw>',
+            'yo':'<yo>',
+            'xh':'<xh>',
+            'sw':'<sw>'
+        }
+    tokenizer = AutoTokenizer.from_pretrained(model_repo)
+   
+    model = AutoModelForSeq2SeqLM.from_pretrained(model_repo)
+
+
+    """## Update tokenizer"""
+    special_tokens_dict = {'additional_special_tokens': list(LANG_TOKEN_MAPPING.values())}
+    tokenizer.add_special_tokens(special_tokens_dict)
+    
+    model.resize_token_embeddings(len(tokenizer))
+
+    state_dict = torch.load(args['checkpoint'],map_location=args['device'])
+   
+    model.load_state_dict(state_dict['model_state_dict'])
+      
+    model = model.to(args['device'])
+
+    #Load the model, load the tokenizer, max and min seq len
+    params['model'] = model
+    params['device'] = args['device']
+    params['max_seq_len'] = args['max_seq_len'] if 'max_seq_len' in args else 50
+    params['min_seq_len'] = args['min_seq_len'] if 'min_seq_len' in args else 2
+    params['tokenizer'] = tokenizer
+    params['num_beams'] = args['num_beams'] if 'num_beams' in args else 4
+    params['lang_token'] = LANG_TOKEN_MAPPING
+    params['truncation'] = args['truncation'] if 'truncation' in args else True
+
+    return params
+
+
+def translate(
+    params: dict,
+    sentence: str,
+    source_lang: str,
+    target_lang: str
+):
+    """
+    Given a sentence and its source and target sentences, this translates the sentence
+    to the given target sentence. 
+    """
+
+    def encode_input_str_translate(params,text, target_lang, tokenizer, seq_len):
+  
+        target_lang_token = params['lang_token'][target_lang]
+
+        # Tokenize and add special tokens
+        input_ids = tokenizer.encode(
+            text = str(target_lang_token) + str(text),
+            return_tensors = 'pt',
+            padding = 'max_length',
+            truncation =  params['truncation'] ,
+            max_length = seq_len)
+
+        return input_ids[0]
+    
+    if source_lang!='' and target_lang!='':
+        inp = [sentence]    
+   
+        input_tokens = [encode_input_str_translate(params,text = inp[i],target_lang = target_lang,tokenizer = params['tokenizer'],seq_len =params['max_seq_len']).unsqueeze(0).to(params['device']) for i in range(len(inp))]
+  
+ 
+        output = [params['model'].generate(input_ids, num_beams=params['num_beams'], num_return_sequences=1,max_length=params['max_seq_len'],min_length=params['min_seq_len']) for input_ids in input_tokens]
+        output = [params['tokenizer'].decode(out[0], skip_special_tokens=True) for out in tqdm(output)]
+  
+        return output[0]
+    
+    else:
+        return None    
+ 
+  
+
+
+
 if __name__=="__main__":
     from argparse import ArgumentParser
     import json
@@ -861,6 +954,8 @@ if __name__=="__main__":
     help='whether or not to print information during experiments. (default: %(default)s)')
 
     args = parser.parse_args() 
+    
+
     main(args)    
     
     
