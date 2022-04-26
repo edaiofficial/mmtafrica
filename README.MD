@@ -1,4 +1,4 @@
-# MMTAfrica
+# MMTAfrica ([Try out our model](https://huggingface.co/spaces/edaiofficial/mmtafrica))
 [Paper](https://aclanthology.org/2021.wmt-1.48/) - [Installation](#installation) - [Example](#example) - [Model checkpoint](#model-checkpoint)  - [Citation](#citation)
 
 
