@@ -35,7 +35,7 @@ python ../mmtafrica.py --model_name='mmtafrica' --homepath="<YOUR HOMEPATH>"
 By default, homepath is the current working directory when you run the code. 
 
 # Model checkpoint
-Our model checkpoints is saved [here](https://drive.google.com/file/d/1gUINHLRQC06HGGeP211-x3IIr3WS84Iy/view?usp=sharing).
+Our model checkpoints is saved [on Google Drive](https://drive.google.com/file/d/1gUINHLRQC06HGGeP211-x3IIr3WS84Iy/view?usp=sharing) and in the [HF Hub](https://huggingface.co/chrisjay/mmtafrica/blob/main/mmt_translation.pt).
 
 
 ## Citation
