@@ -28,7 +28,8 @@ from datetime import datetime
 
 #For WANDB
 PROJECT_NAME = 'Multilingual Translation African Languages'
-wandb.init(project=PROJECT_NAME,entity='mmtafrica')
+#wandb.init(project=PROJECT_NAME,entity='mmtafrica)
+wandb.init(project=PROJECT_NAME)
 os.environ['WANDB_API_KEY']='YOUR_TOKEN_KEY'
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 os.environ['WANDB_MODE'] = 'offline'
